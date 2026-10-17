@@ -923,7 +923,7 @@ export const en = {
       newTab: '(opens in a new tab)',
       credits: {
         createdBy: 'Created by {name}',
-        bio: 'Aerospace engineering student exploring how things fly and how to build them.',
+        bio: 'Aerospace engineering student',
         website: 'Website',
         websiteName: '{name}’s website',
         profileName: '{name} on {service}',

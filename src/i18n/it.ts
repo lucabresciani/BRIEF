@@ -931,7 +931,7 @@ export const it: Widen<typeof en> = {
       newTab: '(si apre in una nuova scheda)',
       credits: {
         createdBy: 'Creato da {name}',
-        bio: 'Studente di ingegneria aerospaziale che esplora come volano le cose e come costruirle.',
+        bio: 'Studente di ingegneria aerospaziale',
         website: 'Sito web',
         websiteName: 'Sito web di {name}',
         profileName: '{name} su {service}',

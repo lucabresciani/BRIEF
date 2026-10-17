@@ -269,8 +269,7 @@ Help → About.
 
 ## Credits
 
-Created by [Luca Bresciani](https://luca-bresciani.com), an aerospace engineering student exploring
-how things fly and how to build them.
+Created by [Luca Bresciani](https://luca-bresciani.com), aerospace engineering student.
 
 - Website: [luca-bresciani.com](https://luca-bresciani.com)
 - GitHub: [@lucabresciani](https://github.com/lucabresciani)

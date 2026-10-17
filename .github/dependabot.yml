@@ -15,6 +15,13 @@ updates:
     ignore:
       # SheetJS is vendored from its own CDN (see vendor/README.md); the npm registry copy is older.
       - dependency-name: xlsx
+      # typescript-eslint supports TypeScript only up to the version range in its peer dependency
+      # (currently below 6.1): raise TypeScript by hand together with typescript-eslint.
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major', 'version-update:semver-minor']
+      # The types follow the Node major the project targets (.nvmrc, CI), not the newest Node.
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
     open-pull-requests-limit: 10
 
   - package-ecosystem: github-actions

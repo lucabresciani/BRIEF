@@ -1,0 +1,8 @@
+id,comment,value
+1,"first line
+second line",3.5
+2,plain,4.0
+3,"multi
+line
+text",5.5
+4,end,6.0

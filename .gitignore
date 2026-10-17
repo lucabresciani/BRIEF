@@ -1,0 +1,26 @@
+# Dependencies and build output
+node_modules
+dist
+dev-dist
+*.local
+
+# Test and coverage output
+coverage
+.vitest
+test-results
+playwright-report
+blob-report
+.playwright-cli
+.eslintcache
+
+# Logs and environment files
+*.log
+.env*
+
+# Local editor and tool settings, operating system files
+.vscode/
+.idea/
+.claude/
+CLAUDE.local.md
+.DS_Store
+Thumbs.db

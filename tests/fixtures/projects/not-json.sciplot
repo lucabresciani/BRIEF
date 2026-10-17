@@ -1,0 +1,12 @@
+{
+ "format": "sciplot",
+ "schemaVersion": 1,
+ "appVersion": "0.1.0",
+ "savedAt": "2026-10-02T10:02:30.000Z",
+ "project": {
+  "id": "prj_5e1c7a9b1",
+  "name": "Lab session 3 — download interrupted here,
+  "datasets": [
+   {
+    "id": "ds_2a9f6c015",
+    "name": "ohm-R1",

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using the metadata from this file.
+type: software
+title: BRIEF
+abstract: >-
+  A free, open-source and local-first lab companion for STEM students that runs in the browser:
+  import or type measurements, plot them, fit a model, show uncertainties correctly and export a
+  figure and a reproducible project.
+authors:
+  - family-names: Bresciani
+    given-names: Luca
+    website: https://luca-bresciani.com
+version: 0.1.0
+date-released: 2026-10-17
+license: MIT
+repository-code: https://github.com/lucabresciani/BRIEF
+keywords:
+  - science education
+  - data visualization
+  - curve fitting
+  - least squares
+  - measurement uncertainty
+  - statistics
+  - local-first

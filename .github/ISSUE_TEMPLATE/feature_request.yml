@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest a new feature or an improvement.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do, and what gets in the way? Describe the experiment, the course or the kind of data if it helps.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: The solution you would like
+      description: How should it work? For a scientific method, include a reference (textbook, paper, standard) that defines it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Other ways to reach the same result, in this app or elsewhere.
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: Who would use it
+      multiple: true
+      options:
+        - Secondary school students
+        - University students
+        - Teachers and lab instructors
+        - Researchers
+
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contributing
+      options:
+        - label: I would like to help build this.

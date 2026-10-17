@@ -1,0 +1,77 @@
+name: Bug report
+description: Something does not work, or a result looks wrong.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a problem. For a security problem, do not use this form:
+        follow [SECURITY.md](https://github.com/lucabresciani/BRIEF/blob/main/SECURITY.md) instead.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you see, and what did you expect instead? For a numerical result, give the value you expected and where it comes from (a textbook, another program, a hand calculation).
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Load the "Ohm's law" example
+        2. Open Fit and choose a polynomial of degree 2
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: file
+    attributes:
+      label: Data file
+      description: Attach the smallest file (or paste the smallest table) that shows the problem. Remove personal or confidential data first; synthetic numbers with the same layout are perfect.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release (for example 0.1.0) or the commit you built from.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      multiple: true
+      options:
+        - Chrome
+        - Edge
+        - Firefox
+        - Safari
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: Operating system and browser version
+      placeholder: Windows 11, Chrome 141
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Interface language
+      options:
+        - English
+        - Italian
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console messages
+      description: Errors from the browser's developer console, if any.
+      render: text

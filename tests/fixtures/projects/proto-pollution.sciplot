@@ -1,0 +1,684 @@
+{
+ "format": "sciplot",
+ "__proto__": { "polluted": "yes" },
+ "schemaVersion": 1,
+ "appVersion": "0.1.0",
+ "savedAt": "2026-10-02T10:02:30.000Z",
+ "project": {
+  "constructor": { "prototype": { "polluted": "yes" } },
+  "__proto__": { "isAdmin": true },
+  "id": "prj_5e1c7a9b1",
+  "name": "Lab session 3 — Ohm & pendulum",
+  "createdAt": "2026-10-02T09:13:40.512Z",
+  "updatedAt": "2026-10-02T10:02:11.904Z",
+  "datasets": [
+   {
+    "id": "ds_2a9f6c015",
+    "name": "ohm-R1",
+    "createdAt": "2026-10-02T09:14:05.120Z",
+    "example": null,
+    "origin": "import",
+    "rawTableId": "raw_8d02f4c13",
+    "layout": {
+     "headerRow": 1,
+     "unitsRow": null,
+     "dataStartRow": 2,
+     "dataEndRow": 12
+    },
+    "notes": ["# Ohm's law — resistor R1 (47 Ω nominal), 2026-10-02"],
+    "columns": [
+     {
+      "id": "col_1f3a5c7e8",
+      "source": {
+       "type": "raw",
+       "index": 0
+      },
+      "name": "I",
+      "unit": "A",
+      "unitSource": "header",
+      "role": "measurement",
+      "uncertaintyOf": null,
+      "detected": {
+       "kind": "numeric",
+       "decimal": "dot",
+       "percent": "display",
+       "confidence": "high",
+       "explanations": []
+      },
+      "override": {}
+     },
+     {
+      "id": "col_2b4d6f809",
+      "source": {
+       "type": "raw",
+       "index": 1
+      },
+      "name": "V",
+      "unit": "V",
+      "unitSource": "header",
+      "role": "measurement",
+      "uncertaintyOf": null,
+      "detected": {
+       "kind": "numeric",
+       "decimal": "dot",
+       "percent": "display",
+       "confidence": "high",
+       "explanations": []
+      },
+      "override": {}
+     },
+     {
+      "id": "col_3c5e7a91a",
+      "source": {
+       "type": "raw",
+       "index": 2
+      },
+      "name": "u(V)",
+      "unit": "V",
+      "unitSource": "header",
+      "role": "uncertainty",
+      "uncertaintyOf": "col_2b4d6f809",
+      "detected": {
+       "kind": "numeric",
+       "decimal": "dot",
+       "percent": "display",
+       "confidence": "high",
+       "explanations": [
+        {
+         "code": "I_MISSING_VALUES",
+         "severity": "info",
+         "params": {
+          "count": 1,
+          "tokens": "NA"
+         },
+         "rows": [6],
+         "columnId": "col_3c5e7a91a"
+        }
+       ]
+      },
+      "override": {}
+     },
+     {
+      "id": "col_4d6f8b02b",
+      "source": {
+       "type": "derived",
+       "spec": {
+        "op": "product",
+        "left": "col_1f3a5c7e8",
+        "right": "col_2b4d6f809"
+       }
+      },
+      "name": "P",
+      "unit": "W",
+      "unitSource": "user",
+      "role": "measurement",
+      "uncertaintyOf": null,
+      "detected": {
+       "kind": "numeric",
+       "decimal": "dot",
+       "percent": "display",
+       "confidence": "high",
+       "explanations": []
+      },
+      "override": {}
+     }
+    ]
+   },
+   {
+    "id": "ds_7b3d1e826",
+    "name": "pendulum · Timings",
+    "createdAt": "2026-10-02T09:31:47.002Z",
+    "example": null,
+    "origin": "import",
+    "rawTableId": "raw_c41e9b7a4",
+    "layout": {
+     "headerRow": 0,
+     "unitsRow": null,
+     "dataStartRow": 1,
+     "dataEndRow": 6
+    },
+    "notes": [],
+    "columns": [
+     {
+      "id": "col_5e7a9c13c",
+      "source": {
+       "type": "raw",
+       "index": 0
+      },
+      "name": "trial",
+      "unit": null,
+      "unitSource": null,
+      "role": "identifier",
+      "uncertaintyOf": null,
+      "detected": {
+       "kind": "numeric",
+       "decimal": "dot",
+       "percent": "display",
+       "confidence": "high",
+       "explanations": []
+      },
+      "override": {}
+     },
+     {
+      "id": "col_6f8bad24d",
+      "source": {
+       "type": "raw",
+       "index": 1
+      },
+      "name": "observer",
+      "unit": null,
+      "unitSource": null,
+      "role": "group",
+      "uncertaintyOf": null,
+      "detected": {
+       "kind": "categorical",
+       "decimal": "dot",
+       "percent": "display",
+       "confidence": "high",
+       "explanations": []
+      },
+      "override": {}
+     },
+     {
+      "id": "col_7a9cbe35e",
+      "source": {
+       "type": "raw",
+       "index": 2
+      },
+      "name": "T",
+      "unit": "s",
+      "unitSource": "header",
+      "role": "measurement",
+      "uncertaintyOf": null,
+      "detected": {
+       "kind": "numeric",
+       "decimal": "dot",
+       "percent": "display",
+       "confidence": "high",
+       "explanations": [
+        {
+         "code": "I_MISSING_VALUES",
+         "severity": "info",
+         "params": {
+          "count": 1,
+          "tokens": "(empty)"
+         },
+         "rows": [3]
+        }
+       ]
+      },
+      "override": {}
+     }
+    ]
+   },
+   {
+    "id": "ds_e05a4c917",
+    "name": "Spring extension (typed)",
+    "createdAt": "2026-10-02T09:50:12.733Z",
+    "example": null,
+    "origin": "notebook",
+    "notes": [],
+    "columns": [
+     {
+      "id": "col_8bad0f46f",
+      "source": {
+       "type": "notebook"
+      },
+      "name": "m",
+      "unit": "kg",
+      "unitSource": "user",
+      "role": "measurement",
+      "uncertaintyOf": null,
+      "detected": {
+       "kind": "numeric",
+       "decimal": "dot",
+       "percent": "display",
+       "confidence": "high",
+       "explanations": []
+      },
+      "override": {
+       "kind": "numeric",
+       "decimal": "dot"
+      }
+     },
+     {
+      "id": "col_9cbe1a57g",
+      "source": {
+       "type": "notebook"
+      },
+      "name": "x",
+      "unit": "cm",
+      "unitSource": "user",
+      "role": "measurement",
+      "uncertaintyOf": null,
+      "detected": {
+       "kind": "numeric",
+       "decimal": "dot",
+       "percent": "display",
+       "confidence": "high",
+       "explanations": []
+      },
+      "override": {
+       "kind": "numeric",
+       "decimal": "dot"
+      }
+     }
+    ],
+    "rowIds": [0,1,3],
+    "cells": {
+     "__proto__": ["polluted"],
+     "constructor": ["a", "b", "c"],
+     "col_8bad0f46f": ["0.050","0.100","0.200"],
+     "col_9cbe1a57g": ["2.1","4.0","8.3"]
+    },
+    "nextRowId": 4
+   }
+  ],
+  "plots": [
+   {
+    "id": "plt_0e4b8f2d1h",
+    "type": "scatter",
+    "title": "Ohm's law — R1",
+    "xAxis": {
+     "label": null,
+     "unit": null,
+     "scale": "linear",
+     "range": {
+      "mode": "auto"
+     },
+     "showGrid": true
+    },
+    "yAxis": {
+     "label": "Voltage",
+     "unit": "V",
+     "scale": "linear",
+     "range": {
+      "mode": "fixed",
+      "min": 0,
+      "max": 5
+     },
+     "showGrid": true
+    },
+    "legend": {
+     "visible": true,
+     "position": "auto"
+    },
+    "series": [
+     {
+      "id": "ser_1a2b3c4di",
+      "datasetId": "ds_2a9f6c015",
+      "name": null,
+      "x": "col_1f3a5c7e8",
+      "y": "col_2b4d6f809",
+      "visible": true,
+      "style": {
+       "paletteIndex": 0,
+       "symbol": "auto",
+       "open": false,
+       "markerSize": 7,
+       "lineDash": "auto",
+       "lineWidth": 1.5
+      },
+      "errorBars": {
+       "x": {
+        "kind": "measurement",
+        "origin": "instrument",
+        "source": {
+         "type": "absolute",
+         "value": 0.0005
+        },
+        "meaning": {
+         "type": "expanded",
+         "k": 2
+        }
+       },
+       "y": {
+        "kind": "measurement",
+        "origin": "user",
+        "source": {
+         "type": "column",
+         "column": "col_3c5e7a91a"
+        },
+        "meaning": {
+         "type": "standard"
+        }
+       },
+       "visible": true
+      }
+     },
+     {
+      "id": "ser_5e6f7a8bj",
+      "datasetId": "ds_2a9f6c015",
+      "name": "Dissipated power",
+      "x": "col_1f3a5c7e8",
+      "y": "col_4d6f8b02b",
+      "visible": false,
+      "style": {
+       "paletteIndex": 1,
+       "symbol": "square",
+       "open": true,
+       "markerSize": 7,
+       "lineDash": "dash",
+       "lineWidth": 1.5
+      },
+      "errorBars": {
+       "x": {
+        "kind": "none"
+       },
+       "y": {
+        "kind": "none"
+       },
+       "visible": false
+      }
+     }
+    ],
+    "scatter": {
+     "residualPanel": true,
+     "showExcluded": true
+    },
+    "line": {
+     "markers": true,
+     "sortByX": true
+    },
+    "bar": {
+     "aggregate": "mean",
+     "datasetId": "ds_7b3d1e826",
+     "category": "col_6f8bad24d",
+     "value": "col_7a9cbe35e",
+     "showObservations": true,
+     "spread": {
+      "kind": "ci",
+      "level": 0.95,
+      "method": "t"
+     }
+    },
+    "histogram": {
+     "datasetId": "ds_7b3d1e826",
+     "value": "col_7a9cbe35e",
+     "bins": {
+      "mode": "auto"
+     }
+    },
+    "box": {
+     "datasetId": "ds_7b3d1e826",
+     "value": "col_7a9cbe35e",
+     "groupBy": "col_6f8bad24d",
+     "points": "outliers",
+     "showMean": true
+    },
+    "export": {
+     "widthPx": 1000,
+     "heightPx": 650,
+     "scale": 3,
+     "caption": true,
+     "includeResiduals": true
+    }
+   }
+  ],
+  "activePlotId": "plt_0e4b8f2d1h",
+  "fits": [
+   {
+    "id": "fit_6c7d8e9fk",
+    "seriesId": "ser_1a2b3c4di",
+    "model": {
+     "type": "linear"
+    },
+    "confidence": 0.95,
+    "show": {
+     "curve": true,
+     "confidenceBand": true,
+     "predictionBand": false,
+     "residuals": true
+    },
+    "curveRange": {
+     "mode": "data"
+    }
+   },
+   {
+    "id": "fit_0a1b2c3dl",
+    "seriesId": "ser_5e6f7a8bj",
+    "model": {
+     "type": "polynomial",
+     "degree": 2
+    },
+    "confidence": 0.99,
+    "show": {
+     "curve": true,
+     "confidenceBand": false,
+     "predictionBand": false,
+     "residuals": false
+    },
+    "curveRange": {
+     "mode": "extend",
+     "min": 0,
+     "max": 0.12
+    }
+   }
+  ],
+  "exclusions": [
+   {
+    "id": "exc_4e5f6a7bm",
+    "datasetId": "ds_2a9f6c015",
+    "rowIds": [5],
+    "reason": "measurement-problem",
+    "note": "Probe contact lost during this reading",
+    "createdAt": "2026-10-02T09:40:02.311Z"
+   },
+   {
+    "id": "exc_8c9d0e1fn",
+    "datasetId": "ds_e05a4c917",
+    "rowIds": [3],
+    "reason": "other",
+    "note": "Spring slipped on the hook",
+    "createdAt": "2026-10-02T09:55:20.004Z"
+   }
+  ],
+  "filters": [
+   {
+    "id": "flt_2a3b4c5do",
+    "datasetId": "ds_7b3d1e826",
+    "enabled": false,
+    "type": "range",
+    "column": "col_7a9cbe35e",
+    "min": 1.6,
+    "max": null
+   },
+   {
+    "id": "flt_6e7f8a9bp",
+    "datasetId": "ds_7b3d1e826",
+    "enabled": true,
+    "type": "category",
+    "column": "col_6f8bad24d",
+    "keep": ["A","B"]
+   }
+  ],
+  "numberFormat": {
+   "decimal": "auto"
+  }
+ },
+ "rawTables": [
+  {
+   "id": "raw_8d02f4c13",
+   "source": {
+    "kind": "csv",
+    "fileName": "ohm-R1.csv",
+    "sheetName": null,
+    "encoding": "utf-8",
+    "delimiter": ",",
+    "byteSize": 251,
+    "importedAt": "2026-10-02T09:14:05.120Z"
+   },
+   "rowCount": 13,
+   "sourceRow": [1,2,3,4,5,6,7,8,9,10,11,12,13],
+   "columns": [
+    {
+     "text": ["# Ohm's law — resistor R1 (47 Ω nominal), 2026-10-02","I (A)","0.010","0.020","0.030","0.040","0.050","0.060","","0.070","0.080","0.090","0.100"],
+     "native": null
+    },
+    {
+     "text": ["","V (V)","0.464","0.941","1.402","1.882","2.339","2.808","","3.294","3.764","4.241","4.706"],
+     "native": null
+    },
+    {
+     "text": ["","u(V) (V)","0.004","0.004","0.005","0.005","NA","0.006","","0.006","0.007","0.007","0.008"],
+     "native": null
+    }
+   ],
+   "tokenIssues": [
+    {
+     "code": "W_RAGGED_ROWS",
+     "severity": "warning",
+     "params": {
+      "count": 2,
+      "row": 1
+     },
+     "rows": [0,8]
+    }
+   ]
+  },
+  {
+   "id": "raw_c41e9b7a4",
+   "source": {
+    "kind": "xlsx",
+    "fileName": "pendulum.xlsx",
+    "sheetName": "Timings",
+    "encoding": null,
+    "delimiter": null,
+    "byteSize": 9214,
+    "importedAt": "2026-10-02T09:31:47.002Z"
+   },
+   "rowCount": 7,
+   "sourceRow": [2,3,4,5,6,7,8],
+   "columns": [
+    {
+     "text": ["trial","1","2","3","1","2","3"],
+     "native": {
+      "kind": [5,1,1,1,1,1,1],
+      "num": [null,1,2,3,1,2,3]
+     }
+    },
+    {
+     "text": ["observer","A","A","A","B","B","B"],
+     "native": {
+      "kind": [5,5,5,5,5,5,5],
+      "num": [null,null,null,null,null,null,null]
+     }
+    },
+    {
+     "text": ["T (s)","1.70","1.75","","1.66","1.98","1.79"],
+     "native": {
+      "kind": [5,1,1,0,1,1,1],
+      "num": [null,1.7,1.75,null,1.66,1.98,1.79]
+     }
+    }
+   ],
+   "tokenIssues": [
+    {
+     "code": "I_TRIMMED_EMPTY",
+     "severity": "info"
+    }
+   ]
+  }
+ ],
+ "operationLog": [
+  {
+   "id": "op_1a7f3c1",
+   "at": "2026-10-02T09:14:05.120Z",
+   "op": "dataset.import",
+   "label": {
+    "key": "ops.dataset.import",
+    "params": {
+     "name": "ohm-R1.csv"
+    }
+   },
+   "datasetId": "ds_2a9f6c015"
+  },
+  {
+   "id": "op_2a7f3c2",
+   "at": "2026-10-02T09:15:30.441Z",
+   "op": "plot.create",
+   "label": {
+    "key": "ops.plot.create"
+   },
+   "datasetId": "ds_2a9f6c015"
+  },
+  {
+   "id": "op_3a7f3c3",
+   "at": "2026-10-02T09:22:10.010Z",
+   "op": "uncertainty.set",
+   "label": {
+    "key": "ops.uncertainty.set",
+    "params": {
+     "axis": "y"
+    }
+   },
+   "datasetId": "ds_2a9f6c015"
+  },
+  {
+   "id": "op_4a7f3c4",
+   "at": "2026-10-02T09:24:58.700Z",
+   "op": "fit.add",
+   "label": {
+    "key": "ops.fit.add",
+    "params": {
+     "model": "linear"
+    }
+   },
+   "datasetId": "ds_2a9f6c015"
+  },
+  {
+   "id": "op_5a7f3c5",
+   "at": "2026-10-02T09:31:47.002Z",
+   "op": "dataset.import",
+   "label": {
+    "key": "ops.dataset.import",
+    "params": {
+     "name": "pendulum.xlsx"
+    }
+   },
+   "datasetId": "ds_7b3d1e826"
+  },
+  {
+   "id": "op_6a7f3c6",
+   "at": "2026-10-02T09:40:02.311Z",
+   "op": "exclusion.add",
+   "label": {
+    "key": "ops.exclusion.add",
+    "params": {
+     "count": 1
+    }
+   },
+   "datasetId": "ds_2a9f6c015"
+  },
+  {
+   "id": "op_7a7f3c7",
+   "at": "2026-10-02T09:45:12.090Z",
+   "op": "column.derive",
+   "label": {
+    "key": "ops.column.derive",
+    "params": {
+     "op": "product"
+    }
+   },
+   "datasetId": "ds_2a9f6c015"
+  },
+  {
+   "id": "op_8a7f3c8",
+   "at": "2026-10-02T09:50:12.733Z",
+   "op": "notebook.create",
+   "label": {
+    "key": "ops.notebook.create"
+   },
+   "datasetId": "ds_e05a4c917"
+  },
+  {
+   "id": "op_9a7f3c9",
+   "at": "2026-10-02T09:58:40.512Z",
+   "op": "filter.set",
+   "label": {
+    "key": "ops.filter.set"
+   },
+   "datasetId": "ds_7b3d1e826"
+  }
+ ]
+}

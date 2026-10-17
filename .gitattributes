@@ -1,0 +1,26 @@
+* text=auto eol=lf
+
+# Test fixtures are kept byte for byte (CRLF, UTF-16, legacy code pages are part of what they test).
+tests/fixtures/** -text
+*.sciplot -text
+
+# Binary files
+*.xlsx binary
+*.xls binary
+*.ods binary
+*.tgz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+
+# Language statistics: third-party and generated code is not counted
+vendor/** linguist-vendored
+tests/fixtures/** linguist-vendored
+src/components/ui/** linguist-generated
+package-lock.json linguist-generated

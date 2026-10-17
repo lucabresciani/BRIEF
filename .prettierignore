@@ -1,0 +1,11 @@
+dist
+dev-dist
+coverage
+.vitest
+test-results
+playwright-report
+.playwright-cli
+vendor
+tests/fixtures
+package-lock.json
+src/components/ui

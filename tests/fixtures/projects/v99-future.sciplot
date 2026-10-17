@@ -1,0 +1,18 @@
+{
+ "format": "sciplot",
+ "schemaVersion": 99,
+ "appVersion": "9.4.0",
+ "savedAt": "2031-03-18T08:00:00.000Z",
+ "project": {
+  "id": "prj_future0001",
+  "title": "Saved by a future version: this layout is unknown to schema 1",
+  "workspaces": [
+   {
+    "kind": "notebook-v3",
+    "cells": [{ "type": "symbolic", "expr": "V = R * I" }],
+    "plots": [{ "type": "polar", "series": [] }]
+   }
+  ]
+ },
+ "tables": { "raw_future0001": { "encoding": "arrow-ipc", "base64": "QVJST1cxAAAA" } }
+}

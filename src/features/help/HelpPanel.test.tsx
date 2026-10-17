@@ -71,7 +71,7 @@ describe('the About section of the help panel', () => {
       ['Luca Bresciani’s website', 'Website', 'https://luca-bresciani.com'],
       ['Luca Bresciani on GitHub', 'GitHub', 'https://github.com/lucabresciani'],
       ['Luca Bresciani on LinkedIn', 'LinkedIn', 'https://linkedin.com/in/luca-bresciani-62a1313a3'],
-      ['Luca Bresciani on X', 'X', 'https://x.com/LucasRobotics'],
+      ['Luca Bresciani on X', 'X', 'https://x.com/bresciani_aero'],
       ['Luca Bresciani on Instagram', 'Instagram', 'https://www.instagram.com/_luca_bresciani/'],
       ['Contact Luca Bresciani', 'Contact', 'https://luca-bresciani.com/contact'],
     ]

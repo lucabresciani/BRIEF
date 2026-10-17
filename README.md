@@ -274,7 +274,7 @@ Created by [Luca Bresciani](https://luca-bresciani.com), aerospace engineering s
 - Website: [luca-bresciani.com](https://luca-bresciani.com)
 - GitHub: [@lucabresciani](https://github.com/lucabresciani)
 - LinkedIn: [Luca Bresciani](https://linkedin.com/in/luca-bresciani-62a1313a3)
-- X: [@LucasRobotics](https://x.com/LucasRobotics)
+- X: [@bresciani_aero](https://x.com/bresciani_aero)
 - Instagram: [@\_luca_bresciani](https://www.instagram.com/_luca_bresciani/)
 - Contact: [luca-bresciani.com/contact](https://luca-bresciani.com/contact)
 

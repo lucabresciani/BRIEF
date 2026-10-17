@@ -41,7 +41,7 @@ test('the About section names BRIEF and credits its author, with links that open
     [/^Luca Bresciani’s website/, 'https://luca-bresciani.com'],
     [/^Luca Bresciani on GitHub/, 'https://github.com/lucabresciani'],
     [/^Luca Bresciani on LinkedIn/, 'https://linkedin.com/in/luca-bresciani-62a1313a3'],
-    [/^Luca Bresciani on X/, 'https://x.com/LucasRobotics'],
+    [/^Luca Bresciani on X/, 'https://x.com/bresciani_aero'],
     [/^Luca Bresciani on Instagram/, 'https://www.instagram.com/_luca_bresciani/'],
     [/^Contact Luca Bresciani/, 'https://luca-bresciani.com/contact'],
   ]

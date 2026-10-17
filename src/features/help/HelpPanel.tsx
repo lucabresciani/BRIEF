@@ -140,7 +140,7 @@ const WEBSITE = 'https://luca-bresciani.com'
 const PROFILES = [
   ['GitHub', 'https://github.com/lucabresciani'],
   ['LinkedIn', 'https://linkedin.com/in/luca-bresciani-62a1313a3'],
-  ['X', 'https://x.com/LucasRobotics'],
+  ['X', 'https://x.com/bresciani_aero'],
   ['Instagram', 'https://www.instagram.com/_luca_bresciani/'],
 ] as const
 
